@@ -15,7 +15,7 @@ char capitalize(char car)
     if (!((int)'a'<=(int)car && (int)car<=(int)'z'))
         return car;
     int e = car;
-    e -= abs((int)'A' - (int)'a');
+    e -= abs((int)'A' - (int)'a');/*zan ar ry zokybe hajaina*/
     return (char)e;
 }
 bool is_car(char car) { return (((int)'A'<=(int)car && (int)car<=(int)'E')); }
